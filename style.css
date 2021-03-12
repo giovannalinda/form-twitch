@@ -118,6 +118,8 @@ form input[type="submit"]:hover {
 }
 
 .footer p {
+position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,13 +132,15 @@ form input[type="submit"]:hover {
  content: "";
  height: 1px;
  width: 60px;
- right: 410px;
- left: 685px;
  background: rgba(0,0,0,0.10);
 }
 
+.footer p::before {
+  left: 15px;
+}
+
 .footer p::after {
-  left: 790px;
+  right: 15px;
 }
 
 .footer .social-field  {
